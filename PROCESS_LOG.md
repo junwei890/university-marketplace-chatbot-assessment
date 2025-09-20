@@ -1,5 +1,5 @@
 # Process log
-This is where most of my thinking process happens **before** even writing a single line in the assessed documents. I'll be tackling assessment components in the order in which they appear in the assessment document.
+This is where most of my thinking process happens **before** even writing a single line in the assessed documents. I'll be tackling assessment components in the order in which they appear in the assessment document. This document is not meant to be neat, I think.
 
 ## Prompt design and engineering
 
@@ -34,3 +34,19 @@ How do I define "more complex problems"? More complex problems will include: All
     - Provide scenarios which the LLM should handle, the steps to handling such scenarios and references which the LLM can use.
     - Provide scenarios which the LLM should escalate and steps of escalating.
     - For all scenarios, include the format of reply.
+
+### When writing prompt
+I realised that I'm not writing a prompt for an AI agent but a chatbot, so its capabilities in regard to handling complex requests and tasks that are out of scope would be limited to raising tickets to human moderators. So the only thing I can do to reduce burden on human moderators would be to handle tasks like analysing product listings and user profiles and determining ban periods. This helps streamline the banning process for humans, reducing their workload.
+
+### Final structure
+1) **Persona**
+2) **Context**
+3) **Tasks**
+    - How to categorise tasks.
+    - Steps to handle task.
+    - References to help in handling task.
+    - Appropriate tone and format of response.
+4) **Catchall**
+    - If any task can't be categorised.
+5) **Post solution steps**
+    - What to do after handling task
