@@ -49,4 +49,23 @@ I realised that I'm not writing a prompt for an AI agent but a chatbot, so its c
 4) **Catchall**
     - If any task can't be categorised.
 5) **Post solution steps**
-    - What to do after handling task
+    - What to do after handling task.
+
+## Test design
+
+### Initial thoughts
+Since I've technically handled the responses for all types of queries in the prompt, in my tests, I should be testing for the ability of the chatbot in **categorising user queries**. I should also test for the **format** that the chatbot returns responses in. I'll also test if the chatbot is using the **references** I gave it.
+
+### Things I will be testing for after initial considerations
+1) Ability to categorise requests.
+2) Format of response.
+3) Use of references.
+
+### Considerations while writing test cases
+I decided to add tests to check the format of tickets raised if any. I also **decided to tweak the prompt abit**, namely adding an extra catchall case where the query is completely unrelated to the online university marketplace.
+
+### Final testing structure
+1) Ability to categorise requests.
+2) Format of tickets raised, if any.
+3) Format of response.
+4) Use of references.

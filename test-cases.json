@@ -1,0 +1,319 @@
+{
+	"test_cases": [
+		{
+			"id": "navigation_001",
+			"category": "navigation",
+			"query": "how do I update my user profile picture?",
+			"ticket_details": {},
+			"response_details": {
+				"formatting_elements": ["1)", "2)", "3)"],
+				"response_body": [
+					"user icon",
+					"on the top right of the webpage",
+					"drop down navigation bar",
+					"'Profile'",
+					"user avatar",
+					"'Upload image'",
+					"'Save'"
+				],
+				"tone": [
+					"i can help you with that",
+					"here's a step-by-step guide",
+					"let me know if you have additional queries"
+				]
+			},
+			"passing_criteria": "ticket details and response body should match the expected as detailed"
+		},
+		{
+			"id": "navigation_002",
+			"category": "navigation",
+			"query": "how do I update a listing I've posted?",
+			"ticket_details": {},
+			"response_details": {
+				"formatting_elements": ["1)", "2)", "3)"],
+				"response_body": [
+					"horizontal navigation bar",
+					"'My listings'",
+					"right click on the listing you want to update",
+					"'Update'",
+					"key in updates",
+					"'Save'"
+				],
+				"tone": [
+					"i can help you with that",
+					"here's a step-by-step guide",
+					"let me know if you have additional queries"
+				]
+			},
+			"passing_criteria": "ticket details and response body should match the expected as detailed"
+		},
+		{
+			"id": "navigation_003",
+			"category": "navigation",
+			"query": "how do I make a listing?",
+			"ticket_details": {},
+			"response_details": {
+				"formatting_elements": ["1)", "2)", "3)"],
+				"response_body": [
+					"horizontal navigation bar",
+					"'My listings'",
+					"'Create listing'",
+					"on the bottom right of the webpage",
+					"key in listing details",
+					"'Create'"
+				],
+				"tone": [
+					"i can help you with that",
+					"here's a step-by-step guide",
+					"let me know if you have additional queries"
+				]
+			},
+			"passing_criteria": "ticket details and response body should match the expected as detailed"
+		},
+		{
+			"id": "common_issue_001",
+			"category": "common issue",
+			"query": "i just posted my listing but it doesn't turn up when I search for it.",
+			"ticket_details": {},
+			"response_details": {
+				"formatting_elements": [],
+				"response_body": [
+					"a background check is being done on your listing",
+					"by an AI model on the backend",
+					"to check if it violates community guidelines",
+					"you should see your listing shortly"
+				],
+				"tone": [
+					"i see how that can be frustrating",
+					"no worries",
+					"let me know if this issue persists"
+				]
+			},
+			"passing_criteria": "ticket details and response body should match the expected as detailed"
+		},
+		{
+			"id": "common_issue_002",
+			"category": "common issue",
+			"query": "i've marked a listing of mine as sold but it still turns up when I search for it.",
+			"ticket_details": {},
+			"response_details": {
+				"formatting_elements": [],
+				"response_body": [
+					"the listing should have a 'Sold' tag when you search for it",
+					"this tag is visible to all users",
+					"you won't receive messages regarding this listing",
+					"the listing should automatically clear an hour after you've marked it as sold"
+				],
+				"tone": [
+					"i see how that can be frustrating",
+					"no worries",
+					"let me know if this issue persists"
+				]
+			},
+			"passing_criteria": "ticket details and response body should match the expected as detailed"
+		},
+		{
+			"id": "common_issue_003",
+			"category": "common_issue",
+			"query": "i've attempted to put up a listing but it doesn't show up when I search for it.",
+			"ticket_details": {},
+			"response_details": {
+				"formatting_elements": [],
+				"response_body": [
+					"your listing likely did not adhere to our community guidelines",
+					"and it wasn't posted on the public marketplace after a background check",
+					"if you think that this is a mistake",
+					"do raise a ticket so a customer service representative can be with you"
+				],
+				"tone": [
+					"i see how that can be frustrating, but",
+					"would you like me to raise a ticket on your behalf?"
+				],
+			},
+			"passing_criteria": "ticket details and response body should match the expected as detailed"
+		},
+		{
+			"id": "common_issue_004",
+			"category": "common issue",
+			"query": "why can't I sign up?",
+			"ticket_details": {},
+			"response_details": {
+				"formatting_elements": [],
+				"response_body": [
+					"this online marketplace is made only for students of <insert_name> university",
+					"you can only sign up using a student email",
+					"if you are a student and have issues signing up with your student email",
+					"it is likely that your student email hasn't yet been activated"
+				],
+				"tone": [
+					"unfortunately",
+					"would you like me to give you instructions on activating your student email?"
+				],
+			},
+			"passing_criteria": "ticket details and response body should match the expected as detailed"
+		},
+		{
+			"id": "common_issue_005",
+			"category": "common issue",
+			"query": "why can't I interact with anything on the website?",
+			"ticket_details": {},
+			"response_details": {
+				"formatting_details": [],
+				"response_body": [
+					"likely, a ban has been imposed on your account",
+					"for violating community guidelines",
+					"if you think this is a mistake",
+					"i could raise a ticket on your behalf"
+				],
+				"tone": [
+					"would you like me to do that?"
+				]
+			},
+			"passing_criteria": "ticket details and response body should match the expected as detailed"
+		},
+		{
+			"id": "guidelines_enforcement_001",
+			"category": "guidelines enforcement",
+			"query": "i've found a listing for contraband, here is the listing id: <insert_listing_id>.",
+			"ticket_details": {
+				"priority": "high",
+				"body": "BAN <insert_user_id> indefinitely for violating <insert_guideline_id>."
+			},
+			"response_details": {
+				"formatting_details": [],
+				"response_body": [
+					"i've raised a ticket on your behalf, a customer service representative will tend to your report shortly",
+					"here is the ticket id for reference: <insert_ticket_id>"
+				],
+				"tone": [
+					"thanks for keeping our community safe!",
+					"do you have any other tasks you would like me to help you with?"
+				]
+			},
+			"passing_criteria": "ticket details and response body should match the expected as detailed"
+		},
+		{
+			"id": "guidelines_enforcement_002",
+			"category": "guidelines enforcement",
+			"query": "there seems to be profanity in this user profile, here is the user id: <insert_user_id>.",
+			"ticket_details": {
+				"priority": "high",
+				"body": "BAN <insert_user_id> for 1 month for violating <insert_guideline_id>."
+			},
+			"response_details": {
+				"formatting_details": [],
+				"response_body": [
+					"i've raised a ticket on your behalf, a customer service representative will tend to your report shortly",
+					"here is the ticket id for reference: <insert_ticket_id>"
+				],
+				"tone": [
+					"thanks for keeping our community safe!",
+					"do you have any other tasks you would like me to help you with?"
+				]
+			},
+			"passing_criteria": "ticket details and response body should match the expected as detailed"
+		},
+		{
+			"id": "guidelines_enforcement_003",
+			"category": "guidelines enforcement",
+			"query": "this listing is a scam, here is the listing id: <insert_listing_id>.",
+			"ticket_details": {
+				"priority": "high",
+				"body": "BAN <insert_user_id> for 3 months for violating <insert_guideline_id>."
+			},
+			"response_details": {
+				"formatting_details": [],
+				"response_body": [
+					"i've raised a ticket on your behalf, a customer service representative will tend to your report shortly",
+					"here is the ticket id for reference: <insert_ticket_id>"
+				],
+				"tone": [
+					"thanks for keeping our community safe!",
+					"do you have any other tasks you would like me to help you with?"
+				]
+			},
+			"passing_criteria": "ticket details and response body should match the expected as detailed"
+		},
+		{
+			"id": "catchall_001",
+			"category": "catchall",
+			"query": "i've made a deal with another user but they seem to be a no show on the day of exchange",
+			"ticket_details": {
+				"priority": "low",
+				"body": "i've made a deal with another user but they seem to be a no show on the day of exchange"
+			},
+			"response_details": {
+				"formatting_details": [],
+				"response_body": [
+					"i've raised a ticket on your behalf, a customer service representative will tend to your query shortly",
+					"here is the ticket id for reference: <insert_ticket_id>"
+				],
+				"tone": [
+					"unfortunately, that request is not within my scope",
+					"but no worries"
+				],
+			},
+			"passing_criteria": "ticket details and response body should match the expected as detailed"
+		},
+		{
+			"id": "catchall_002",
+			"category": "catchall",
+			"query": "the quality of product i received seems to be vastly different from what it was described to be in the listing",
+			"ticket_details": {
+				"priority": "low",
+				"body": "the quality of product i received seems to be vastly different from what it was described to be in the listing"
+			},
+			"response_details": {
+				"formatting_details": [],
+				"response_body": [
+					"i've raised a ticket on your behalf, a customer service representative will tend to your query shortly",
+					"here is the ticket id for reference: <insert_ticket_id>"
+				],
+				"tone": [
+					"unfortunately, that request is not within my scope",
+					"but no worries"
+				],
+			},
+			"passing_criteria": "ticket details and response body should match the expected as detailed"
+		},
+		{
+			"id": "catchall_003",
+			"category": "catchall",
+			"query": "the customer i'm dealing with is lowballing me while also being extremely rude",
+			"ticket_details": {
+				"priority": "low",
+				"body": "the customer i'm dealing with is lowballing me while also being extremely rude"
+			},
+			"response_details": {
+				"formatting_details": [],
+				"response_body": [
+					"i've raised a ticket on your behalf, a customer service representative will tend to your query shortly",
+					"here is the ticket id for reference: <insert_ticket_id>"
+				],
+				"tone": [
+					"unfortunately, that request is not within my scope",
+					"but no worries"
+				],
+			},
+			"passing_criteria": "ticket details and response body should match the expected as detailed"
+		},
+		{
+			"id": "catchall_004",
+			"category": "catchall",
+			"query": "is the sky blue?",
+			"ticket_details": {},
+			"response_details": {
+				"formatting_details": ["1)", "2)", "3)"],
+				"response_body": [
+					"that seems to be unrelated to any customer support I can help you with",
+					"here is a list of common issues faced by users",
+					"do you require help regarding any of them?"
+				],
+				"tone": [
+					"unfortunately"
+				],
+			},
+			"passing_criteria": "ticket details and response body should match the expected as detailed"
+		},
+	]
+}
