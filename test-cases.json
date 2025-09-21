@@ -22,7 +22,7 @@
 					"let me know if you have additional queries"
 				]
 			},
-			"passing_criteria": "ticket details and response body should match the expected as detailed"
+			"passing_criteria": "category, ticket details and response body should match the expected as detailed"
 		},
 		{
 			"id": "navigation_002",
@@ -45,7 +45,7 @@
 					"let me know if you have additional queries"
 				]
 			},
-			"passing_criteria": "ticket details and response body should match the expected as detailed"
+			"passing_criteria": "category, ticket details and response body should match the expected as detailed"
 		},
 		{
 			"id": "navigation_003",
@@ -68,7 +68,7 @@
 					"let me know if you have additional queries"
 				]
 			},
-			"passing_criteria": "ticket details and response body should match the expected as detailed"
+			"passing_criteria": "category, ticket details and response body should match the expected as detailed"
 		},
 		{
 			"id": "common_issue_001",
@@ -89,7 +89,7 @@
 					"let me know if this issue persists"
 				]
 			},
-			"passing_criteria": "ticket details and response body should match the expected as detailed"
+			"passing_criteria": "category, ticket details and response body should match the expected as detailed"
 		},
 		{
 			"id": "common_issue_002",
@@ -110,7 +110,7 @@
 					"let me know if this issue persists"
 				]
 			},
-			"passing_criteria": "ticket details and response body should match the expected as detailed"
+			"passing_criteria": "category, ticket details and response body should match the expected as detailed"
 		},
 		{
 			"id": "common_issue_003",
@@ -130,7 +130,7 @@
 					"would you like me to raise a ticket on your behalf?"
 				],
 			},
-			"passing_criteria": "ticket details and response body should match the expected as detailed"
+			"passing_criteria": "category, ticket details and response body should match the expected as detailed"
 		},
 		{
 			"id": "common_issue_004",
@@ -150,7 +150,7 @@
 					"would you like me to give you instructions on activating your student email?"
 				],
 			},
-			"passing_criteria": "ticket details and response body should match the expected as detailed"
+			"passing_criteria": "category, ticket details and response body should match the expected as detailed"
 		},
 		{
 			"id": "common_issue_005",
@@ -169,7 +169,7 @@
 					"would you like me to do that?"
 				]
 			},
-			"passing_criteria": "ticket details and response body should match the expected as detailed"
+			"passing_criteria": "category, ticket details and response body should match the expected as detailed"
 		},
 		{
 			"id": "guidelines_enforcement_001",
@@ -190,7 +190,7 @@
 					"do you have any other tasks you would like me to help you with?"
 				]
 			},
-			"passing_criteria": "ticket details and response body should match the expected as detailed"
+			"passing_criteria": "category, ticket details and response body should match the expected as detailed"
 		},
 		{
 			"id": "guidelines_enforcement_002",
@@ -211,7 +211,7 @@
 					"do you have any other tasks you would like me to help you with?"
 				]
 			},
-			"passing_criteria": "ticket details and response body should match the expected as detailed"
+			"passing_criteria": "category, ticket details and response body should match the expected as detailed"
 		},
 		{
 			"id": "guidelines_enforcement_003",
@@ -232,7 +232,7 @@
 					"do you have any other tasks you would like me to help you with?"
 				]
 			},
-			"passing_criteria": "ticket details and response body should match the expected as detailed"
+			"passing_criteria": "category, ticket details and response body should match the expected as detailed"
 		},
 		{
 			"id": "catchall_001",
@@ -253,7 +253,7 @@
 					"but no worries"
 				],
 			},
-			"passing_criteria": "ticket details and response body should match the expected as detailed"
+			"passing_criteria": "category, ticket details and response body should match the expected as detailed"
 		},
 		{
 			"id": "catchall_002",
@@ -274,7 +274,7 @@
 					"but no worries"
 				],
 			},
-			"passing_criteria": "ticket details and response body should match the expected as detailed"
+			"passing_criteria": "category, ticket details and response body should match the expected as detailed"
 		},
 		{
 			"id": "catchall_003",
@@ -295,7 +295,7 @@
 					"but no worries"
 				],
 			},
-			"passing_criteria": "ticket details and response body should match the expected as detailed"
+			"passing_criteria": "category, ticket details and response body should match the expected as detailed"
 		},
 		{
 			"id": "catchall_004",
@@ -313,7 +313,7 @@
 					"unfortunately"
 				],
 			},
-			"passing_criteria": "ticket details and response body should match the expected as detailed"
+			"passing_criteria": "category, ticket details and response body should match the expected as detailed"
 		},
 	]
 }
