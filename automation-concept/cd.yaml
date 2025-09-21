@@ -1,0 +1,34 @@
+name: cd
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: auth
+        uses: google-github-actions/auth@v2
+        with:
+          credentials_json: ${{ secrets.GCP_CREDENTIALS }}
+
+      - name: Set up GCP SDK
+        uses: google-github-actions/setup-gcloud@v2
+
+      - name: Build and push Docker image
+        run: gcloud builds submit --tag region-docker.pkg.dev/project_id/repository_name/name:latest .
+
+      - name: Deploy to GCP
+        run: |
+          gcloud run deploy name \
+            --image region-docker.pkg.dev/project_id/repository_name/name:latest \
+            --region region \
+            --allow-unauthenticated \
+            --project project_id \
+            --service-account cloud-run-deployer@project_id.iam.gserviceaccount.com \
+            --max-instances=4

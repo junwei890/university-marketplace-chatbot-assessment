@@ -69,3 +69,11 @@ I decided to add tests to check the format of tickets raised if any. I also **de
 2) Format of tickets raised, if any.
 3) Format of response.
 4) Use of references.
+
+## Automation and update process
+
+Let's say this chatbot is built as a **web API**, to deploy it I'll be using a method I'm most familiar with. I'll just **containerise** it and deploy it as a **microservice on GCP Cloud Run**.
+
+Though this will deviate alot from the deliverable requested, the CICD will be carried out using Github Actions and there won't be any Python or Javascript automation script. Hopefully this isn't a problem. But I feel this is a much better approach because it removes the need for rollbacks for failed updates since failed updates won't deploy to GCP anyways with the yaml workflow file in Github Actions. Using Github actions also satisfies all other requirements without the need for a Python or Javascript automation script.
+
+YOLO
