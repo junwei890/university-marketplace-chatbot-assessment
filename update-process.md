@@ -17,4 +17,4 @@ Here is how the general flow would go:
 Here is the workflow diagram:
 ![workflow](./resources/CICD.png)
 
-Such an approach would not require a rollback capability for failed updates as updates that fail to build during the deployment pipeline would not be deployed to GCP Cloud Run anyways.Furthermore, checks during the integration pipeline like automated testing, linting and formatting checks would prevent potentially failing updates from reaching the deployment pipeline.
+Such an approach would not require a rollback capability for failed updates as updates that fail to build during the deployment pipeline would not be deployed to GCP Cloud Run anyways. Furthermore, checks during the integration pipeline like automated testing, linting and formatting checks would prevent potentially failing updates from reaching the deployment pipeline.
